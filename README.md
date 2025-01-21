@@ -120,11 +120,6 @@ Clone the repository to your local machine using the following command:
     }
     ```
 
-- **Get My Requests**
-
-  - **Endpoint**: `GET /api/material-requests/my-requests`
-  - **Request Header**: `Authorization: Bearer <token>`
-
 - **Get Pending Requests**
 
   - **Endpoint**: `GET /api/material-requests/pending`
@@ -197,13 +192,37 @@ Clone the repository to your local machine using the following command:
      }
      ```
 
-4. **Get My Requests**:
+4. **Update Material Request**:
+
+   - **Method**: `PUT`
+   - **URL**: `http://localhost:8080/api/material-requests/{id}`
+   - **Header**: `Authorization: Bearer <token>`
+   - **Body**:
+     ```json
+     {
+       "Update Success"
+     }
+     ```
+
+5. **Delete Material Request**:
+
+   - **Method**: `DELETE`
+   - **URL**: `http://localhost:8080/api/material-requests/{id}`
+   - **Header**: `Authorization: Bearer <token>`
+   - **Body**:
+     ```json
+     {
+       "Delete Request Material Success"
+     }
+     ```
+
+6. **Get My Requests**:
 
    - **Method**: `GET`
    - **URL**: `http://localhost:8080/api/material-requests/my-requests`
    - **Header**: `Authorization: Bearer <token>`
 
-5. **Approve Material Request**:
+7. **Approve Material Request**:
 
    - **Method**: `PUT`
    - **URL**: `http://localhost:8080/api/material-requests/{id}/approve`
@@ -215,7 +234,7 @@ Clone the repository to your local machine using the following command:
      }
      ```
 
-6. **Reject Material Request**:
+8. **Reject Material Request**:
 
    - **Method**: `PUT`
    - **URL**: `http://localhost:8080/api/material-requests/{id}/reject`
