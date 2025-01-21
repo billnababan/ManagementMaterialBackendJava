@@ -35,7 +35,7 @@ Clone the repository to your local machine using the following command:
 1. Navigate to the backend directory:
 
    ```bash
-   cd MaterialManagement
+   cd ManagementMaterialBackendJava
    ```
 
 2. Configure the database connection in `application.properties`:
