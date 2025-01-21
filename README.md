@@ -80,9 +80,6 @@ Clone the repository to your local machine using the following command:
     }
     ```
 
-- **Get All Users**
-  - **Endpoint**: `GET /api/users`
-  - **Request Header**: `Authorization: Bearer <token>`
 
 ### Authentication
 
